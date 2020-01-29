@@ -91,7 +91,6 @@ function stopListeningToRequests() {
 }
 
 function removeUidFromCookies(details) {
-  console.log('removing')
   for (var i = 0; i < details.requestHeaders.length; ++i) {
     if (details.requestHeaders[i].name === "Cookie") {
       details.requestHeaders[i].value = details.requestHeaders[i].value.replace(
